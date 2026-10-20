@@ -45,5 +45,14 @@ public class Main {
                 "USA",
                 4999,
                 true);
+
+
+        Park park = new Park();
+
+        Park.Attraction a1 = park.new Attraction("Карусель", "9:00-20:00", 150);
+        Park.Attraction a2 = park.new Attraction("Колесо обозрения", "10:00-22:00", 350);
+
+        a1.show();
+        a2.show();
     }
 }
