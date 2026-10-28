@@ -35,5 +35,29 @@ public class Main {
         for (Cat catt : cats) {
             System.out.println(catt.getName() + " is full: " + catt.isFull());
         }
+
+        Shape[] shapes = {
+                new Circle(5, "Red", "Black"),
+                //new Rectangle(4, 6, "Blue", "White"),
+                //new Triangle(3, 4, 5, "Green", "Black")
+        };
+
+        for (Shape shape : shapes) {
+
+            System.out.println("Figure: "
+                    + shape.getClass().getSimpleName());
+
+            System.out.println("Area: " + shape.getArea());
+            System.out.println("Perimeter: "
+                    + shape.getPerimeter());
+
+            System.out.println("Fill: "
+                    + shape.getFillColor());
+
+            System.out.println("Border: "
+                    + shape.getBorderColor());
+
+            System.out.println();
+        }
     }
 }
